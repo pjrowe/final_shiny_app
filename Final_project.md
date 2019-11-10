@@ -1,75 +1,86 @@
-Shiny Web Application Predicting XXX
+User Guide for Shiny Web Application for Plotting Stock Charts and Calculating Returns
 ========================================================
 author: Phillip Rowe     
-date: November 4, 2019
-autosize: true
+date: November 9, 2019
+#### Coursera Data Science Specialization: Developing Data Products
 
-To do
+##### *This html documentation for the web application can be found at:*
+
+### https://pjrowe.github.io/final_shiny_app/
+
+About Application
+========================================================
+This application allows users to select one of 9 stocks on the Bovespa exchange in Brazil and see its daily closing price chart through October 25, 2019
+
+A number of important reference levels are calculated, providing information for the user to set target projections and time frames 
+
+The app's interactivity is intuitive, and the ouptuts react immediately to changes in inputs
+
+A simplified description of the app and its inputs and outputs is provided on a Documentation tab of the app
+
+Note: The code excerpt and chart plot in the slides below are illustrative only (the shiny app cannot be embedded in Rmarkdown, so inputs are hardcoded in the example code)
+
+Outputs are reactive to changes in inputs
 ========================================================
 
-1. create a Shiny application and deploy it on Rstudio's servers
-2. useRstudio Presenter to prepare a reproducible pitch presentation about the app
+### User-Provided Inputs
 
-Your Shiny Application must include the following:
+1. Slider to choose one of nine stock tickers from the Bovespa exchange in Brazil 
+2. Slider for price target
+3. Slider for timeframe (days) for reaching price target 
+4. Tick box to display 50-day average (in red) of price chart
+5. Click on chart to check price at any point
 
-x- Some form of input (widget: textbox, radio button, checkbox, ...)
-x- Some operation on the ui input in server.R
-x- Some reactive output displayed as a result of server calculations
-- documentation that user would need to get started using app should be at the Shiny website 
-- Share the app link by pasting it into the provided text box
-- Share your server.R and ui.R code on github
+***
 
-Your Reproducible Pitch Presentation
+### Outputs
 
-- create a web page using Rstudio Presenter with an html5 slide deck to pitch the app (5 slides, inclusive of the title slide) 
-- push presentation to github or Rpubs
-- A link to your github or Rpubs presentation pasted into the provided text box
-- must contain some embedded R code that gets run when slidifying the document
-(Rstudio presenter has a button to publish directly to Rpubs https://support.rstudio.com/hc/en-us/articles/200714023-Displaying-and-Distributing-Presentations. Paste as http:// link not a https:// link.)
+1. Several outputs are based on historical prices (e.g., price chart, year to date return, downside to year low, upside to year high) 
+2. Two are projected returns: annualized return, and ... 
+3. ...absolute return, of price target vs. last closing price
+4. Price in chart can be queried at crosshairs with a mouse click 
 
-- can also publish using both formats to github manually using gh-pages, though your github branch must have a .nojekyll fle and be on a branch names gh-pages. 
-
-Slide 2
-========================================================
-
-Your Shiny Application
-
-- Was there enough documentation on the shiny site for a user to get started using the app?
-- Did the app run as described?
-- Was there some form of widget input (slider, textbox, radio buttons, checkbox, ...) in either ui.R or a custom web page?
-- Did server.R perform some calculations on the input in server.R?
-- Was the server calculation displayed in the html page?
-- Was the app substantively different than the very simple applications built in the class? 
-
-Your Reproducible Pitch
-
-- contain an R expression that got evaluated and displayed?
-- Was the server calculation displayed in the html page?
-- tinker around with the default style? 
-- no R errors displayed in the presentation.
-
-Slide With Code
+Example Server Code
 ========================================================
 
 
 ```r
-summary(cars)
+mydata    <- read.csv('stocks.csv')
+mydata$date=as.Date(mydata$date,"%m/%d/%Y")
+
+indexticker <- 1
+pricetarget <- 50
+chosenticker=
+    switch(indexticker,"MGLU3","ITUB4", "BBDC4", "BBAS3", "BTOW3", "SLED4", "PETR4", 
+           "VALE4", "ABEV4")
+chosendata = mydata[(mydata$ticker==chosenticker),]
+
+first=head(chosendata$price,1)
+lastprice <- tail(chosendata$price,1)
+low = round(min(chosendata$price),2)
+high = round(max(chosendata$price),2)
+
+absret=round(100*(pricetarget/lastprice-1),1)
+paste("Absolute return: ", absret,"%")
 ```
 
 ```
-     speed           dist       
- Min.   : 4.0   Min.   :  2.00  
- 1st Qu.:12.0   1st Qu.: 26.00  
- Median :15.0   Median : 36.00  
- Mean   :15.4   Mean   : 42.98  
- 3rd Qu.:19.0   3rd Qu.: 56.00  
- Max.   :25.0   Max.   :120.00  
+[1] "Absolute return:  19 %"
 ```
 
-Slide With Plot
+Output Charts
 ========================================================
 
-![plot of chunk unnamed-chunk-2](Final_project-figure/unnamed-chunk-2-1.png)
 
-For more details on R presentations 
-<https://support.rstudio.com/hc/en-us/articles/200486468>.
+```
+[1] "Absolute return:  19 %"
+```
+
+```
+[1] "Annualized return:  54.6 %"
+```
+
+<img src="Final_project-figure/unnamed-chunk-2-1.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" width="500px" height="500px" />
+
+
+
