@@ -4,8 +4,13 @@
 1. creating a Shiny application and deploying it on Rstudio's servers
 2. creating a pitch presentation / user guide for the app using Rstudio Presenter.
 - **Link to interactive shiny app**:  https://pjrowe.shinyapps.io/final_shiny_app/
-- **User guide for app**: https://pjrowe.github.io/final_shiny_app/
-
+- **Link to user guide for app**: https://pjrowe.github.io/final_shiny_app/
+- **Final_project.Rpres**: Rstudio Presenter file for user guide
+	README.md 	Update README.md 	1 minute ago
+	index.html 	adding final Rmd and html and ui and server files 	2 months ago
+	server.R 	adding final Rmd and html and ui and server files 	2 months ago
+	stocks.csv 	first commit 	2 months ago
+	ui.R
 # Phillip Rowe Coursework on Coursera
 
 ## EDHEC Business School on Coursera  
