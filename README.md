@@ -1,8 +1,9 @@
 # final_shiny_app
 - This repository contains files for the Final project for Course 9 of Johns Hopkins Data Science Specialization, Developing Data Products - completed November 2019
 - The project included two parts: 
-1. creating a Shiny application and deploying it on Rstudio's servers https://pjrowe.shinyapps.io/final_shiny_app/
-2. creating a pitch presentation / user guide for the app using Rstudio Presenter. https://pjrowe.github.io/final_shiny_app/ 
+1. creating a Shiny application and deploying it on Rstudio's servers  
+2. creating a pitch presentation / user guide for the app using Rstudio Presenter.  
+- I chose to create an app that plotted year-to-date charts of select Brazil stocks and calculated absolute and annualized returns based on user-selected price target and investment horizon. This app could be extended in the future to pull real-time data on a wider selection of stocks.
 - **Link to interactive shiny app**:  https://pjrowe.shinyapps.io/final_shiny_app/
 - **Link to user guide for app**: https://pjrowe.github.io/final_shiny_app/ 
 - **Rstudio Presenter file for user guide**: Final_project.Rpres
