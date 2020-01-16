@@ -1,7 +1,8 @@
 # final_shiny_app
 - This repository contains files for the Final project for Course 9 of Johns Hopkins Data Science Specialization, Developing Data Products - completed November 2019
-- Link to interactive shiny app for plotting stock chart:  https://pjrowe.shinyapps.io/final_shiny_app/
-- User guide for use of shiny app: https://pjrowe.github.io/final_shiny_app/
+- My choice was to build an interactive 
+- **Link to interactive shiny app**:  https://pjrowe.shinyapps.io/final_shiny_app/
+- **User guide for app**: https://pjrowe.github.io/final_shiny_app/
 
 # Phillip Rowe Coursework on Coursera
 
