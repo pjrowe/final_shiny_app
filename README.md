@@ -1,15 +1,18 @@
 # final_shiny_app
-- Final project for Johns Hopkins Data Science Specialization, Course 9 - Developing Data Products - completed November 2019
-- Link to interactive shiny app for plotting stock chart  https://pjrowe.shinyapps.io/final_shiny_app/
-- User guide for use of shiny app https://pjrowe.github.io/final_shiny_app/
+- This repository contains files for the Final project for Course 9 of Johns Hopkins Data Science Specialization, Developing Data Products - completed November 2019
+- Link to interactive shiny app for plotting stock chart:  https://pjrowe.shinyapps.io/final_shiny_app/
+- User guide for use of shiny app: https://pjrowe.github.io/final_shiny_app/
 
 # Phillip Rowe Coursework on Coursera
 
 ## EDHEC Business School on Coursera  
 ### Investment Management with Python and Machine Learning 
 #### 4 courses, 70+ hours
+#### - Languages and platforms/software used: Python, Anaconda, JupyterLab/Notebook
+
 https://www.coursera.org/specializations/investment-management-python-machine-learning?
 -	Nov 2019 – present -  4 courses on portfolio construction and analysis with Python and machine learning, focusing on the theory and implementation of modern computational and statistical methods in the design of more robust diversification and risk management models
+
 - Course 1 - Introduction to Portfolio Construction and Analysis with Python - completed Nov 27, 2019
 https://www.coursera.org/account/accomplishments/verify/XEL5S8CA2U7S
 - Course 2 - Advanced Portfolio Construction and Analysis with Python - completed December 10, 2019
@@ -21,22 +24,36 @@ https://www.coursera.org/learn/machine-learning-asset-management-alternative-dat
 
 ## Johns Hopkins on Coursera 
 ### Data Science Specialization 
-#### 10 courses/ 140+ hours total
+#### 10 courses, 140+ hours total
+#### - Languages and platforms/software used: R/RStudio, Shiny
 https://www.coursera.org/specializations/jhu-data-science?
 - Enrolled June 2019 – present
+
 - Course 1  - The Data Scientist’s Toolbox - completed June 2019
+https://www.coursera.org/account/accomplishments/records/BZ26PUEVKYAU
 - Course 2  - R Programming - completed July 2019
+https://www.coursera.org/account/accomplishments/records/C8ZMBP2F7UCK
 - Course 3  - Getting and Cleaning Data - completed August 2019 
+https://www.coursera.org/account/accomplishments/records/B9QBDAX7HK9P
 - Course 4  - Exploratory Data Analysis - completed August 2019
+https://www.coursera.org/account/accomplishments/records/MPHEY2LNZDFE
 - Course 5  - Reproducible Research - completed August 2019
+https://www.coursera.org/account/accomplishments/records/JGMN3S3L4TXM
+
 - Course 6  - Statistical Inference - completed September 2019
+https://www.coursera.org/account/accomplishments/records/JCZ2AAJJHR4E
 - Course 7  - Regression Models - completed October 2019
+https://www.coursera.org/account/accomplishments/records/SQ5KUEQDJUNW
 - Course 8  - Practical Machine Learning - completed November 2019
+https://www.coursera.org/account/accomplishments/records/6JBRPK8TH6PN
 - Course 9  - Developing Data Products - completed November 2019
+https://www.coursera.org/account/accomplishments/records/3JHR7UWGN7CL
 - Course 10 - Data Science Capstone - in progress
 
 ## Stanford University on Coursera 
 ### Machine Learning with Professor Andrew Ng 
-#### 11 week course, 55+ hours
+#### Self paced 11 module course, 55+ hours
+#### - Languages and platforms/software used: Matlab
 https://www.coursera.org/account/accomplishments/verify/QPBXXBNQ82CP
-- Enrolled April 2019 – June 2019
+- Enrolled April 2019, completed June 11, 2019
+
