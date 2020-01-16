@@ -1,6 +1,8 @@
 # final_shiny_app
 - This repository contains files for the Final project for Course 9 of Johns Hopkins Data Science Specialization, Developing Data Products - completed November 2019
-- My choice was to build an interactive 
+- The project included two parts: 
+1. creating a Shiny application and deploying it on Rstudio's servers
+2. creating a pitch presentation / user guide for the app using Rstudio Presenter.
 - **Link to interactive shiny app**:  https://pjrowe.shinyapps.io/final_shiny_app/
 - **User guide for app**: https://pjrowe.github.io/final_shiny_app/
 
